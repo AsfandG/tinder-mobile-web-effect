@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .details-container {
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9));
+      }
+    </style>
+  </head>
+  <body>
+    <div class="w-full h-screen bg-black">
+      <div class="image-container w-full h-screen relative overflow-hidden">
+        <div
+          class="w-[110%] maincard z-[3] absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-[110%]"
+        >
+          <img src="" alt="main-card" class="w-full h-full object-cover" />
+        </div>
+        <div
+          class="w-[110%] incomingcard z-[2] absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-[110%]"
+        >
+          <img src="" alt="main-card" class="w-full h-full object-cover" />
+        </div>
+      </div>
+      <div
+        class="absolute top-0 left-0 z-[4] w-full h-screen flex flex-col justify-between"
+      >
+        <div class="navbar flex items-center justify-between text-white p-5">
+          <div
+            class="profile-image w-[3rem] h-[3rem] overflow-hidden rounded-full"
+          >
+            <img
+              src=""
+              alt="profile image"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <h2 class="text-capitalize tracking-tight text-xl">
+            Your Passion To Strive
+          </h2>
+          <div
+            class="chaticon w-[3rem] h-[3rem] relative rounded-full bg-white/20 flex items-center justify-center"
+          >
+            <i class="opacity-80 ri-chat-3-fill"></i>
+            <div
+              class="badge absolute -top-1 right-0 h-5 w-5 text-sm rounded-full bg-[#fc5149] flex items-center justify-center"
+            >
+              5
+            </div>
+          </div>
+        </div>
+
+        <div class="details-container w-full">
+          <div class="details w-full p-5">
+            <div class="element location flex gap-2 items-center">
+              <i
+                class="w-7 h-7 flex items-center justify-center font-semibold rounded-full bg-white ri-corner-left-up-fill"
+              ></i>
+              <h2 class="text-white"></h2>
+            </div>
+
+            <div class="element name flex gap-5 text-white mt-4">
+              <h1 class="text-7xl font-regular tracking-tight">Victoria</h1>
+              <h1 class="text-7xl font-regular tracking-tight opacity-60">
+                20
+              </h1>
+            </div>
+
+            <div class="element tags flex gap-5 text-white mt-4">
+              <!-- <div
+                class="tag flex gap-3 items-center bg-white/30 px-3 py-1 rounded-full"
+              >
+                <i class="ri-music-2-fill text-sm"></i>
+                <h2 class="text-sm tracking-tight">Music</h2>
+              </div> -->
+            </div>
+
+            <div class="element bio text-white/80 mt-5">
+              <h2 class="text-xl">Bio</h2>
+              <p class="text-sm mt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                laborum illo repellendus fugit, exercitationem tenetur earum
+                eligendi ex libero vero.
+              </p>
+            </div>
+            <!-- buttons -->
+            <div class="element flex gap-3 items-center mt-7">
+              <button class="deny py-2 bg-white w-1/2 rounded-xl">
+                <i class="ri-close-line font-semibold text-2xl"></i>
+              </button>
+              <button class="accept py-2 bg-[#fc5149] w-1/2 rounded-xl">
+                <i
+                  class="ri-heart-3-fill font-semibold text-2xl text-white"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
